@@ -1,0 +1,69 @@
+/*---------------------------------------------------
+	NAVBAR
+---------------------------------------------------*/
+.sample {
+	position: absolute;
+	z-index: 1;
+	/*border: 1px solid black;*/
+	width: 100%;
+
+}
+div.collapse ul li a {
+	color: white;
+	font-size: 20px;
+}
+.change-me-white {
+	color: white;
+}
+ul li {
+	list-style: none;
+}
+
+/*---------------------------------------------------
+	BODY
+---------------------------------------------------*/
+body {
+	background-image: url("../park-images/wood02.jpg");
+	font-family: cursive;
+	color:white;
+}
+.borderimg1 { 
+    border: 25px;
+    padding: 0px;
+    border-image: url("../park-images/wood03.jpg") 30 round;
+    /*background-image: url("../park-images/wood.jpg");*/
+}
+.mycolor{
+	background-color: #5C755E;
+}
+/*---------------------------------------------------
+	CAROUSEL
+---------------------------------------------------*/
+#my-carousel .item { 
+	height: 500px;
+	width: 100%;
+ }
+.carousel-caption { font: 25px Arial; }
+.carousel-caption h1 { font: 45px Arial; }
+#first-image {
+	background: url('../park-images/Redwood02.jpg') top center no-repeat;
+	background-size: 100% 100%; /* rezising the image*/
+}
+#second-image {
+	background: url('../park-images/Redwood03.jpg') top center no-repeat;
+	background-size: 100% 100%; /* rezising the image*/
+}
+#third-image {
+	background: url('../park-images/Redwood04.jpg') top center no-repeat;
+	background-size: 100% 100%; /* rezising the image*/
+}
+#fourth-image {
+	background: url('../park-images/Redwood- View03.jpg') top center no-repeat;
+	background-size: 100% 100%; 
+}
+/*---------------------------------------------------
+	FOOTER
+---------------------------------------------------*/
+.footerimage{
+	background: url('../park-images/forrest-footer02.jpg') top center no-repeat;
+}

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Registration</title>
+    <!-- Libs -->
+    <link href="libs/css/bootstrap.min.css" rel="stylesheet">
+    <!-- End Libs -->
+
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navbar ===========================================-->
+    <nav class="navbar mycolor" role="navigation">
+        <div class="container-fluid ">
+            <div class="navbar-brand">
+                <h4 id="#">California Nationals Park</h4>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="navbar-selected-view"><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+                    <li><a href="About-Us.html"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> <!-- /.navbar -->
+
+    <!-- Start Header -->
+    <div class="container borderimg1">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 mycolor" style="border: 1px solid black;">
+                <div class="container-fluid">
+                    <h1 style="text-align: center">My Profile</h1>
+                </div>
+                <br>
+                <!-- Start Form -->
+                <form data-toggle="validator" role="form">
+                    <div class="container-fluid">
+                        <!-- Name/Sex Input forms -->
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="firstname" class="control-label">First Name:</label>
+                                        <input type="text" pattern="[A-Za-z]*" class="form-control" id="firstname" placeholder="First Name" data-error="Letters Only!" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label for="mname" class="control-label">Middle:</label>
+                                        <input type="text" pattern="[A-Z a-z]*" class="form-control" id="mname" placeholder="" data-error="Letters Only!">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="lastname" class="control-label">Last Name:</label>
+                                        <input type="text" pattern="[A-Za-z]*" class="form-control" id="lastname" placeholder="Last Name" data-error="Letters Only!" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label for="gender" class="control-label">Gender:</label>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="sexType" id="male" required>
+                                                Male
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="sexType" id="female" required>
+                                                Female
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <!-- Address Input row  -->
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <label for="address" class="control-label">Street Address:</label>
+                                        <input type="text" pattern="[A-Z a-z0-9]*" class="form-control" id="address" placeholder="Enter street address" data-error="Only valid addresses accepted" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="zip" class="control-label">Zip:</label>
+                                        <input pattern="[0-9]*" class="form-control" data-minlength="5" id="zip" placeholder="Zip Code" data-error="Enter a valid zip code." required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="city" class="control-label">City:</label>
+                                        <input type="text" pattern="[A-Z a-z]*" class="form-control" id="city" placeholder="City" data-error="Enter a real city please" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="state" class="control-label">State:</label>
+                                        <input type="text" pattern="[A-Z a-z]*" class="form-control" id="state" placeholder="Your State" data-error="Enter a proper state." required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="phone" class="control-label">Phone Number:</label>
+                                        <input pattern="[0-9 -()]*" class="form-control" id="phone" placeholder="Phone number" data-error="Enter your phone number" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail" class="control-label">Email:</label>
+                                    <input type="email"  class="form-control" id="inputEmail" placeholder="Email" data-error="Invalid Email Address" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail" class="control-label">Confirm Email:</label>
+                                    <input type="email" class="form-control" id="inputEmailConfirm" data-match="#inputEmail" data-match-error="Emails don't match" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+
+                            <div class="row"> 
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword" class="control-label">Password</label>
+                                    <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+                                    <span class="help-block">Minimum of 6 characters use numbers and letters</span>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword" class="control-label">Confirm Password</label>
+                                    <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Passwords don't match" placeholder="Password" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <!-- Comments & Button -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group" >
+                                        <label for="Visited Parks">Comments:</label>
+                                        <textarea class="form-control" rows="5" id="parksvisited"></textarea>
+                                    </div>
+                                    <center>
+                                        <div class="form-group">
+                                            <input class="btn btn-danger btn-lg" type="reset" value="Reset">
+                                            <input type="button" name="btn" value="Submit" id="submitBtn" data-toggle="modal" data-target="#confirm-submit" class="btn btn-info btn-lg" />
+                                        </div>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- footer ==========================================-->
+    <nav>
+        <footer class="mycolor" style="border: 1px solid black;">
+            <div class="container">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h5>Copy Right &copy; 2015 ITT Tech</h5>
+                        </div>
+                        <div class="col-sm-3">
+                            <h5>Navigation</h5>
+                            <ul class="styling">
+                                <li class="navbar-selected-view"><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+                                <li><a href="Registration.html"><span class="glyphicon glyphicon-tree-conifer" aria-hidden="true"></span>Sign In</a></li>
+                                <li><a href="about.html"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>About Us</a></li>
+                                <li><a href="Profile.html"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>User Profile</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <h5>Follow US</h5>
+                            <ul class="styling styling2">
+                                <li class="cwu-facebook"><img id="facebook" src="images/social/Facebook.png"/><a href="http://www.facebook.com">Facebook</a></li>                    <li class="cwu-twitter"><img id="twitter" src="images/social/Twitter.png"/><a href="http://www.twitter.com">Twitter</a></li>
+                                <li class="cwu-youtube"><img id="youtube" src="images/social/Youtube.png"/><a href="http://www.youtube.com">Youtube</a></li>
+                                <li class="cwu-instagram"><img id="instagram" src="images/social/Instagram.png"/><a href="http://www.instagram.com">Instagram</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <h5>Contact US</h5>
+                            <address>
+                                <strong>ITT Tech</strong><br>
+                                410 Mile of Cars,<br>
+                                National City, CA 91911<br> 
+                                <abbr title="Phone">P:</abbr> (619) 555-555
+                            </address>
+                        </div>
+                    </div> <!-- /.row -->
+                </div>  
+            </div><!--end footer container-->
+        </footer>   
+    </nav>
+
+   
+    <!-- Confirmation Modal -->
+    <div class="modal fade" id="confirm-submit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title center">
+                        Welcome to National Parks of California
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <p class="center">Thank You for Registered with California National Parks</p>
+                </div>
+                <div class="modal-footer">
+                    <center>
+                        <a href="#" id="submit-data" class="btn btn-success success" data-dismiss="modal">OK</a>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="libs/js/jquery.easing.min.js"></script><!-- Scrolling Nav JavaScript -->
+    <script type="text/javascript" src="js/validator.js"></script><!-- Include Bootstrap Asserts JavaScript Files. -->
+
+    <script src="js/nps-api.js"></script>
+    <script src="js/registration.js"></script>
+</body>
+</html>
+
+
+

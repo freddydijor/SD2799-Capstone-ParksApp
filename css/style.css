@@ -1,0 +1,167 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/*Links CSS*/
+a {
+	text-decoration: none;
+	color: #fff;
+}
+/* Padding below the footer and lighter body text */
+footer {
+	padding-bottom: 20px;
+  margin-bottom: -60px;
+}
+.selected img { opacity:0.5; }
+
+/*---------------------------------------------------
+	NAVBAR
+---------------------------------------------------*/
+.sample {
+	position: absolute;
+	z-index: 1;
+	/*border: 1px solid black;*/
+	width: 100%;
+
+}
+div.collapse ul li a {
+	color: white;
+	font-size: 20px;
+}
+
+div.collapse ul li:last-child {
+  margin-top: 10px;
+}
+div.collapse ul .marginleft {
+  margin-left: 15px;
+}
+
+
+/*---------------------------------------------------
+	BODY
+---------------------------------------------------*/
+body {
+	background-image: url("../images/wood02.jpg");
+	font-family: cursive;
+	color:#fff;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+
+/*---------------------------------------------------
+	CAROUSEL
+---------------------------------------------------*/
+.carousel-caption { font: 25px Arial;
+text-decoration: none; }
+.carousel-caption h1 { font: 45px Arial; }
+
+/*Modal CSS*/
+
+  .modText{
+    color: #000;
+  }
+  .modText a{
+    color: #000;
+  }
+  #modalHead {
+      background-color: green;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-footer {
+      background-color: #f9f9f9;
+  }
+
+/*Footer CSS*/  
+  #facebook {
+            margin-left: 8px;
+            height: 25px;
+            width: 28px;
+        }
+        #twitter {
+            margin-left: 8px;
+            height: 23px;
+            width: 28px;
+        }
+        #youtube {
+            margin-left: 8px;
+            height: 20px;
+            width: 28px;
+        }
+        #instagram {
+            margin-left: 8px;
+            height: 25px;
+            width: 28px;
+        }
+
+        li{
+          list-style-type: none;
+        }
+
+/*Carousel Header edits*/
+.shadow {
+	margin: 10px auto;
+	text-align: center;
+	text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 5px 5px 0px rgba(0,0,0,0.8);
+	color: #fff;
+	font: 700 40px 'bitter';
+}
+/*new stuff*/
+.nav.navbar-nav.navbar-right li a {
+    color:#fff;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: #000;  /*Sets the text hover color on navbar*/
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >   
+ a:hover, .navbar-default .navbar-nav > .active > a:focus {
+color: white; /*BACKGROUND color for active*/
+background-color: #030033;
+}
+
+  .navbar-default {
+    background-color: #5C755E;
+    border-color: #5C755E;
+}
+
+  .dropdown-menu > li > a:hover,
+   .dropdown-menu > li > a:focus {
+    color: #262626;
+   text-decoration: none;
+  background-color: #6CCFF;  /*change color of links in drop down here*/
+   }
+
+ .nav > li > a:hover,
+ .nav > li > a:focus {
+    text-decoration: none;
+    background-color: silver; /*Change rollover cell color here*/
+  }
+
+
+  .navbar-default .navbar-nav > li > a {
+   color: white; /*Change active text color here*/
+    }
+
+    /*Wood border*/
+
+.borderimg1 { 
+    border: 25px;
+    padding: 0px;
+    border-image: url("../images/wood03.jpg") 30 round;
+    /*background-image: url("../images/wood.jpg");*/
+}
+.mycolor{
+  background-color: #5C755E;
+}
+
+.center {
+  text-align: center;
+  color: green;
+}
+/*---------------------------------------------------
+  FOOTER
+---------------------------------------------------*/
+.footerimage{
+  background: url('../images/forrest-footer02.jpg') top center no-repeat;
+}
